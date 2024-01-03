@@ -47,12 +47,18 @@ h1:last-of-type {
     margin-top: 100px;
 }
 
+
 .header p {
-    margin: 0 auto;
+    margin: 100px;
     line-height: 2;
     color: var(--grayishBlue);
 }
 
+.body {
+    color: var(--grayishBlue);
+    text-align: left;
+    font-size:  13;
+  }
 
 .box p {
     color: var(--grayishBlue);
@@ -61,7 +67,7 @@ h1:last-of-type {
 
 .box {
     border-radius: 5px;
-    box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+    box-shadow: 20px 30px 40px 20px var(--grayishBlue);
     padding: 30px;
     margin: 20px; 
     object-fit: contain; 
@@ -71,6 +77,10 @@ img {
     float: right;
     object-fit: contain;
 }
+.img-container {
+    position: relative;
+    display: inline-block;
+  }
 
 @media (max-width: 450px) {
     .box {
