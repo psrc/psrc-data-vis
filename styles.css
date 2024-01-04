@@ -82,6 +82,21 @@ img {
     display: inline-block;
   }
 
+.img-caption {
+    display: flex;
+
+}  
+
+.description {
+    font-size: .9rem;
+    margin-right: 1rem;
+}
+
+figure {
+    margin: 0;
+  }
+
+
 @media (max-width: 450px) {
     .box {
         height: 200px;
