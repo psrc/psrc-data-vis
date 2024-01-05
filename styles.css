@@ -178,3 +178,42 @@ h2 {
     }
 } 
 
+@media (min-width: 2600px)  {
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+    }
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+        object-fit: contain;
+    }
+    .box {
+        width: 30%;
+        object-fit: contain;
+    }
+
+    .header p {
+        width: 30%;
+    }
+    h1 {
+        font-size: 2.4rem; 
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .description {
+        font-size: 1.3rem;
+    }
+} 
+
