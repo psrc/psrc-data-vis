@@ -34,19 +34,12 @@ h1:last-of-type {
     color: var(--varyDarkBlue);
 }
 
-@media (max-width: 400px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-}
-
 .header {
     text-align: center;
     line-height: 0.8;
     margin-bottom: 50px;
     margin-top: 100px;
 }
-
 
 .header p {
     margin: 100px;
@@ -75,6 +68,7 @@ h1:last-of-type {
 
 img {
     float: right;
+    width: 100%;
     object-fit: contain;
 }
 .img-container {
@@ -82,22 +76,21 @@ img {
     display: inline-block;
   }
 
-@media (max-width: 450px) {
-    .box {
-        height: 200px;
-        object-fit: contain;
-    }
+.img-caption {
+    display: flex;
+}  
+
+.description {
+    font-size: .9rem;
+    margin-right: 1rem;
+    width: 50%;
 }
 
-@media (max-width: 950px) and (min-width: 450px) {
-    .box {
-        text-align: center;
-        height: 180px;
-        object-fit: contain;
-    }
-}
+figure {
+    margin: 0;
+  }
 
-.cyan {
+  .cyan {
     border-top: 3px solid var(--cyan);
 }
 .red {
@@ -115,8 +108,45 @@ h2 {
     font-weight: var(--weight3);
 }
 
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
 
-@media (min-width: 950px) {
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .description {
+        font-size: 7pt;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 992px) {
+
+    .box {
+        padding-top: 15px; 
+        text-align: center;
+        object-fit: contain;
+    }
+
+    .description {
+        width: 60%;
+        text-align: left;
+    }
+
+    img {
+        float: right;
+        width: 90%;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 993px)  {
     .row1-container {
         display: flex;
         justify-content: center;
@@ -142,5 +172,48 @@ h2 {
     .header p {
         width: 30%;
     }
+
+    .description {
+        font-size: .9rem;
+    }
+} 
+
+@media (min-width: 1100px)  {
+    /*samsung screen in data & office monitors*/
+    .row1-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+    }
+    .row2-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+    }
+    .box-down {
+        position: relative;
+        top: 150px;
+        object-fit: contain;
+    }
+    .box {
+        width: 30%;
+        object-fit: contain;
+    }
+
+    .header p {
+        width: 30%;
+    }
+    h1 {
+        font-size: 2.4rem; 
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
     
-}
+    .description {
+        font-size: .9rem;
+    }
+} 
